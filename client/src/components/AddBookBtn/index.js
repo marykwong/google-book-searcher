@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "../Button";
-import axios from "axios";
+import React from "react"
+import Button from "../Button"
+import axios from "axios"
 
 class AddBookBtn extends React.Component{
  
@@ -20,7 +20,7 @@ class AddBookBtn extends React.Component{
 
     render() {
         return (
-          <div>
+          <div align="right">
           <br />
           <Button type="danger" onClick={() => 
             {this.postToDB(this.props)}

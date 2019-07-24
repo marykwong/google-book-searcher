@@ -1,17 +1,10 @@
 div.jumbotron {
-background-image: url(https://images.unsplash.com/photo-1474932430478-367dbb6832c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
+    background-image: url('https://rossiterbooks.co.uk/wp-content/uploads/2017/05/s2b.jpg');
+    padding: 150px;
+    background-size: cover;
 
 }
 
 .white{
     color:floralwhite;
 }
-
-/* a{
-    color: floralwhite;
-} */
-
-/* a{
-    color: blue;
-} */
-

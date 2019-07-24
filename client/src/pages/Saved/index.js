@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import { Row, Col } from "../../components/Grid";
-import { BookList, BookListItem } from "../../components/BookList";
-import axios from "axios";
-import RemoveBookBtn from '../../components/RemoveBookBtn';
-import { toast } from 'react-toastify';
+import React, { Component } from 'react'
+import { Row, Col } from "../../components/Grid"
+import { BookList, BookListItem } from "../../components/BookList"
+import axios from "axios"
+import RemoveBookBtn from '../../components/RemoveBookBtn'
 
 
 class Saved extends Component {
@@ -29,7 +28,7 @@ class Saved extends Component {
 
     axios.delete(`/api/books/${id}`)
       .then( () => {
-        toast.error('Book Deleted');
+        alert('Book Deleted');
         this.getBooks();
         
       })
@@ -55,9 +54,12 @@ class Saved extends Component {
                         link={book.link}
                         thumbnail={book.thumbnail}
                       />
+                      <br/>
+                      <p>
                       <RemoveBookBtn
                         onClick={() => this.deleteFromDB(book._id)}
                       />
+                      </p>
                     </div>
                   )
 
@@ -69,8 +71,8 @@ class Saved extends Component {
           </Col>
         </Row>
       </div>
-    );
+    )
   }
 }
 
-export default Saved;
+export default Saved
