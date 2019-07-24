@@ -9,9 +9,13 @@ This is a React-based Google Books Search app. You can search for books, save th
 This app was built with:
 
 Bootstrap
+
 Express
+
 Node.js
+
 React
+
 MongoDB
 
 ## Deployment
